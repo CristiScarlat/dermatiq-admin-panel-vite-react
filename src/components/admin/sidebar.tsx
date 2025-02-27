@@ -1,6 +1,19 @@
 import styles from "./admin.module.css";
 
-const Sidebar = ({items, onClick, selectedItem, className}) => {
+interface SidebarItem {
+    id: number
+    label: string
+    role: 'admin' | 'user'
+}
+
+interface Props {
+    items: Array<SidebarItem>
+    onClick: (x: SidebarItem) => void
+    selectedItem: SidebarItem
+    className: string
+}
+
+const Sidebar = ({items, onClick, selectedItem, className}: Props) => {
     return (
         <>
             <ul className={`${styles['sidebar-list']} ${className}`}>

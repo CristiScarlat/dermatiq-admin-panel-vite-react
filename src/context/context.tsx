@@ -11,7 +11,7 @@ export interface IUser {
         isAuthenticated: boolean,
         role: 'user' | 'admin',
         username: '',
-        uid: number
+        uid?: number
 }
 
 interface IState {
