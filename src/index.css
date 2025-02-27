@@ -1,0 +1,193 @@
+/* @import url("https://use.typekit.net/atw7jti.css"); */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Playfair+Display+SC&display=swap");
+
+/* @font-face {
+  font-family: 'VogueAvantGarde';
+  src: url('/font/VogueAvantGarde-Medium.woff') format('woff');
+} */
+
+:root {
+    --main-header-background-color: #4956a0;
+    --main-background-color: #e0e0ec;
+    --home-main-image-background-color: #8b8ec2;
+    --home-main-image-text-color: #4956a0;
+    --big-circle-icons-color: #4956a0;
+    --box-shadow-color: #00000069;
+    --text-color-main: #616061;
+    --link-text-color-main: #f5f7f7;
+    --text-color-main: #616061;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    /* font-family: adobe-garamond-pro, serif!important; */
+    font-family: VogueAvantGarde, helvetica, sans-serif !important;
+    /* font-family: 'Oswald', sans-serif!important; */
+
+    font-style: normal;
+    /*background-color: var(--main-background-color)!important;*/
+
+    background: #e0e0ec !important;
+    /* background: linear-gradient(0deg, rgba(73,70,250,1) 0%, #04fce2 200%); */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--link-text-color-main) !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: var(--link-text-color-main) !important;
+}
+
+.section-title {
+    font-size: 24px;
+    color: var(--home-main-image-text-color);
+    font-weight: 600;
+}
+
+.sections-separator {
+    border: 1px solid #796588;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.section-procesures {
+    display: flex;
+    width: 95%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.hover-pointer:hover {
+    cursor: pointer;
+}
+
+.react-datepicker__day--highlighted-custom {
+    background-color: #e4e6d3;
+}
+
+.booking-team-custom-card {
+    width: 210px;
+    min-height: 26rem;
+    box-shadow: 1px 1px 20px 0px var(--box-shadow-color);
+}
+
+.booking-team-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.custom-button {
+    border-color: var(--big-circle-icons-color) !important;
+    background-color: var(--big-circle-icons-color) !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+.custom-button:hover {
+    background-color: #2e3775 !important;
+}
+
+.btn-circle {
+    position: relative;
+}
+
+.btn-circle.busy:after {
+    content: "";
+    position: absolute;
+    border: 1px solid #ff0a0a;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: rotate(152deg);
+}
+
+.custom-button.btn-circle {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    font-size: 18px;
+}
+
+.custom-nav-link.active {
+    color: var(--main-background-color) !important;
+    text-shadow: 0px 0px 5px black;
+}
+
+.custom-nav-link:hover {
+    color: var(--main-background-color) !important;
+    text-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.gdpr-container {
+    /* background-color: rgb(245 247 247); */
+    margin: 1rem 2rem;
+    /* box-shadow: 3px 4px 15px 3px #c6c1c1; */
+    /* border-radius: 4px; */
+}
+
+.gdpr-container strong {
+    font-weight: bolder;
+    background-color: #4956a07a;
+    padding: 0.2rem;
+    color: white;
+    line-height: 2rem;
+}
+
+.navbar-collapse {
+    line-height: 3rem;
+    transition: height 0.3s linear;
+}
+
+table {
+    background-color: transparent !important;
+}
+
+.transition {
+    transition: linear 5s ease-in-out;
+}
+
+.custom-button-close {
+    color: white;
+}
+
+.card-body-paragraph {
+    height: 10.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.dashboard-table td {
+    white-space: nowrap;
+}
+
+header {
+    padding: 1rem;
+    box-shadow: 0px 2px 6px black;
+    max-width: 60rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .only-desktop {
+        display: none;
+    }
+}
