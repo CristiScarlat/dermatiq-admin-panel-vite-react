@@ -9,9 +9,9 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'My Vite React App',
-        short_name: 'MyApp',
-        description: 'An awesome Vite-powered React app',
+        name: 'Dermatiq admin panel',
+        short_name: 'Dermatiq',
+        description: 'Dermatiq admin panel for employs and admins',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',
@@ -27,7 +27,10 @@ export default defineConfig({
             sizes: '512x512',
             type: 'image/png',
           }
-        ]
+        ],
+        scope: "/",
+        orientation: "portrait",
+        prefer_related_applications: false
       }
     })
   ]
